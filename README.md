@@ -41,7 +41,7 @@ Here are the code(written in R) and thoughts of some statistics and data mining 
 <p>In average a React user plays 17 games.</p>
 <br>
 <p><b>So we know that an average React player have spended 11.6 minutes playing in 17 plays and got an average of 44rp</b></p>
-<h4>So how can we set the constants to React adapt yourself?</h4>
+<h4>So how can we set the constants to React adapt itself?</h4>
 <p></p>
 
 <hr>
