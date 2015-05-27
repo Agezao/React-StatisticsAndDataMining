@@ -36,6 +36,17 @@ Here are the code(written in R) and thoughts of some statistics and data mining 
 <p>701 seconds, or 11.6 minutes, is the average time that some one have passed playing on React</p>
 <img width="500" src="https://raw.githubusercontent.com/Agezao/React-StatisticsAndDataMining/master/plots/User%20-%20User%20vs%20Time%20Playing%20-%20General.jpg" alt="React graph 4" title= "React graph 4"/>
 <p>*For curiosity, the user that have spended more time playing React have a milestone of 82 minutes, or 1.36 hous, that's a lot of time, thanks for the appreciation.</p>
-<!--<h4><b>How much games have users played?</b></h4>-->
+<h4><b>How much games have users played?</b></h4>
+<img width="500" src="https://raw.githubusercontent.com/Agezao/React-StatisticsAndDataMining/master/plots/8-%20Average%20number%20of%20plays%20per%20user.jpg" alt="React graph 5" title= "React graph 5"/>
+<p>In average a React user plays 17 games.</p>
+<br>
+<p><b>So we know that an average React player have spended 11.6 minutes playing in 17 plays and got an average of 44rp</b></p>
+<h4>So how can we set the constants to React adapt yourself?</h4>
+<p></p>
+
+<hr>
+<h4>Another infos collected from the data</h4>
+<img width="500" src="https://raw.githubusercontent.com/Agezao/React-StatisticsAndDataMining/master/plots/4-%20Average%20score%20progress%20related%20to%20number%20of%20plays.jpg" alt="React graph 6" title="React graph 6"/>
+<p>The average score of people that play more than 50 times is 275% greater than the average of those who plays less than 50 times.</p>
 
 
