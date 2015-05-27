@@ -3,7 +3,7 @@
    #Global variables / Enviroment variables
       #playdata <- read.csv("playdata.csv") #RawData from .csv, old method
       rawJsonPlayData <- readLines("~(I remove server address for the commit, but you can find a sample as playdata.json on root folder)~") # Fetching raw json data of the game from server
-      rawJsonUserData <- readLines("~(I remove server address for the commit, but you can find a sample as userdata.json on root folder)~")      
+      rawJsonUserData <- readLines("~(I remove server address for the commit, but you can find a sample as userdata.json on root folder)~")       
       playdata = jsonlite::fromJSON(rawJsonPlayData) #and then parsing them from Json
       userdata = jsonlite::fromJSON(rawJsonUserData) 
 
@@ -57,6 +57,11 @@
       #Average Time Playing
          timePlayingPerUser <- calculateAverageTimePlayingPerUser(playdata)
          averageTimePlaying <- mean(as.numeric(timePlayingPerUser[,"playTime"]))
+
+
+
+      #Average Number of Plays
+         averageOfPlaysPerUser <- round(nrow(playdata) / nrow(userdata))
 
 
 
@@ -149,6 +154,16 @@
          )
          generateDefaultBarChard(plotableFrame,"3- Average time played per user","seconds") 
          dev.off()
+
+
+      #Average number of plays
+         plotableFrame <- data.frame(
+            labels = "Number of plays",
+            data = averageOfPlaysPerUser
+         )
+         generateDefaultBarChard(plotableFrame,"8- Average number of plays per user","plays") 
+         dev.off()
+
 
       #Users vs Time playing
          plotableFrame <- data.frame(
