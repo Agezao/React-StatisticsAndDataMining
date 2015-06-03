@@ -17,13 +17,13 @@ Here are the code(written in R) and thoughts of some statistics and data mining 
 <h2>What data do we need to feed this mind? And how to collect these? 🐟</h2>
 <p>We can construct such intelligence with just some simple data from how users play React, like how much games have they played, average score, average time playing, etc. but as long as this study progress you will see how much information such simple data can carry. Everytime a React user finish a play we collect some data from their run, like the score, time playing on that run and some other things, after that, the data is sent to our <a href="https://nodejs.org/">NodeJS</a> server API and stored on a <a href="https://www.mongodb.org/">MongoDB</a> database so we can analyze them later and React players can have a "Global Highscore" feature to know how they perform versus another players.</p>
 <br>
-<h2>Okay we have the data, but now what?</h2>
+<h2>Okay we have the data, but now what? 🐁</h2>
 <p>To create a powerfull engine for React's brain just a bunch of data isn't enough, we need to extract the gold from this soil, and for this "extraction" our pickaxe were metamorphosed in <a href="http://www.r-project.org/">R</a>, a well rooted programming language in the field of statistical computing and graphics.</p>
 <p>Since R is out for a long time now we have a lot of usefull libraries on the web to use, a lot of content on stackoverflow to answer our questions and a lot of free courses avaiable over the internet, so it wasn't a pain at all to learn and apply R on this project.</p>
 <p><b>With the right tools in hands and fresh data from our users we can start the mining.</b></p>
 <br>
 <hr>
-<small>*all the data, numbers and graphs used below are avaiable in this repository within the code to reproduce them;</small><small>**the data provided as date or time will be presented as +00:00 UTC but will be discussed as -3 GMT since 80% of React players came from this time zone;</small><small>***all the graphs presented here can be found in the ./Plots folder in this repository;</small>
+<small>*all the data, numbers and graphs used below are avaiable in this repository within the code to reproduce them;*</small><small>*the data provided as date or time will be presented as +00:00 UTC but will be discussed as -3 GMT since 80% of React players came from this time zone;*</small><small>*all the graphs presented here can be found in the ./Plots folder in this repository;*</small>
 <br>
 <h2>What react users have said to us?</h2>
 <h4><b>First, we analyze how React users perform within the game in a general way:</b></h4>
@@ -42,11 +42,32 @@ Here are the code(written in R) and thoughts of some statistics and data mining 
 <br>
 <p><b>So we know that an average React player have spended 11.6 minutes playing in 17 plays and got an average of 44rp</b></p>
 <h4>So how can we set the constants to React adapt itself?</h4>
-<p></p>
+<p>Now that we know how a average React user behaves we can say to the engine how he should behave to users have fun games. Soon we will code in React's mind and after it's lock and load we'll publish it on GitHub too and so we can demonstrate how all this data helps the process. Stay tuned;</p>
+
+<br/>
+<br/>
+
+> <small>*All this work was made with ❤️ by <a href="https://br.linkedin.com/in/gabrielrcosta">Gabriel "Age" Rodrigues</a> and <a href="https://www.facebook.com/GameREACT">React</a> team*</small>
+
+<br/>
+<br/>
 
 <hr>
+
+<small>*Following the study progress i will write down here the news oberved*</small>
+<br>
 <h4>Another infos collected from the data</h4>
 <img width="500" src="https://raw.githubusercontent.com/Agezao/React-StatisticsAndDataMining/master/plots/4-%20Average%20score%20progress%20related%20to%20number%20of%20plays.jpg" alt="React graph 6" title="React graph 6"/>
-<p>The average score of people that play more than 50 times is 275% greater than the average of those who plays less than 50 times.</p>
+<p>The average score of people that play more than 50 times is 275% greater than the average of those who plays less than 50 times. Wow.</p>
+<br/>
+<img width="500" src="https://raw.githubusercontent.com/Agezao/React-StatisticsAndDataMining/master/plots/5-%20Plays%20by%20time%20of%20day%2C%20as%20rate%20-%20UTC%2B0.jpg" alt="React graph 7" title="React graph 7"/>
+<p>43% of all React plays was made in between 10 and 15 hours(-3GMT), with a special look at the 15hr that holds 13% of all React plays alone.</p>
+<img width="500" src="https://raw.githubusercontent.com/Agezao/React-StatisticsAndDataMining/master/plots/6-%20Average%20score%20by%20time%20of%20day%20-%20UTC%2B0.jpg" alt="React graph 8" title="React graph 8"/>
+<p>But in the other hand plays who happen between 15-18hr(-3GMT) have an average score of only 17rp, while the games in between 3-5hr have an average score of 75rp. We can say that Owls are the best React players.</p>
+<img width="500" src="https://raw.githubusercontent.com/Agezao/React-StatisticsAndDataMining/master/plots/6-%20Progress%20rate%20between%20general%20average%20and%20time%20of%20day%20average%20-%20UTC%2B0.jpg" alt="React graph 9" title="React graph 9"/>
+<p>So we can say that games that happens between 3-5hr(-3GMT) scores an average of 109% more than the general score average. Pretty weird.</p>
+<br>
+<img width="500" src="https://raw.githubusercontent.com/Agezao/React-StatisticsAndDataMining/master/plots/7-%20Plays%20by%20week%20day%2C%20as%20rate%20-%20UTC%2B0.jpg" alt="React graph 10" title="React graph 10"/>
+<p>For some reason, React players are very Thursday addictive, 32% of all the games happens on this day. I don't know well why, and i don't really care about since it's a good number, what grinds me here is the number of games on the weekend. Why such a low rate? Should we make double points on weekends or something like this to attract weekend players? :-c</p>
 
 
